@@ -8,6 +8,9 @@ public class ClientePF extends Cliente{
 	public String getCpf() {
 		return cpf;
 	}
+	public String getNome(){
+		return super.getNome().toUpperCase();
+	}
 	
 	public void imprimirNomeMaiusculo(){
 		System.out.println(getNome().toUpperCase());
@@ -15,6 +18,11 @@ public class ClientePF extends Cliente{
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	
+	public void imprimirPropriedades(){
+		System.out.println("nome:" + getNome());
+		System.out.println("cpf:" + getCpf());
 	}
 	
 }

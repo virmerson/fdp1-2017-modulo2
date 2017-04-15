@@ -11,4 +11,9 @@ public class ClientePJ extends Cliente {
 		this.cpnj = cpnj;
 	}
 	
+	public void imprimirPropriedades(){
+		System.out.println("nome:" + getNome());
+		System.out.println("cnpj:" + getCpnj());
+	}
+	
 }

@@ -14,19 +14,12 @@ public class ProgramaPrincipalHeranca {
 			clipj.setNome("Zé ME Ltda");
 			clipj.setCpnj("10.999.976/0001-32");//##
 			
+			GerenciadorCliente g = new GerenciadorCliente(2);
+			g.cadastrar(clipf);
+			g.cadastrar(clipj);
 			
-			Cliente[] vetor = new Cliente[2];
-			vetor[0]=clipf;
-			vetor[1]=clipj;
+			g.imprimirClientes();
 			
-			for(int i=0; i<vetor.length; i++){
-				System.out.println(vetor[i].getNome());
-				if (vetor[i] instanceof ClientePF){
-					System.out.println(  ((ClientePF) vetor[i] )   .getCpf()     );
-				}else{
-					System.out.println( ( (ClientePJ) vetor[i] ).getCpnj());
-				}
-			}
 			
 	
 	}
