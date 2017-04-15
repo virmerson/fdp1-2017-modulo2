@@ -11,7 +11,5 @@ public abstract class Cliente  {
 		this.nome = nome;
 	}
 	
-	public  void imprimirPropriedades(){
-		
-	}
+	public abstract void imprimirPropriedades();
 }

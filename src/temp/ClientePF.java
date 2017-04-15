@@ -19,7 +19,7 @@ public class ClientePF extends Cliente{
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
+	@Override
 	public void imprimirPropriedades(){
 		System.out.println("nome:" + getNome());
 		System.out.println("cpf:" + getCpf());

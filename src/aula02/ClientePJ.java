@@ -1,5 +1,6 @@
 package aula02;
 
+
 public class ClientePJ extends Cliente {
 	private String cpnj;
 
@@ -10,10 +11,12 @@ public class ClientePJ extends Cliente {
 	public void setCpnj(String cpnj) {
 		this.cpnj = cpnj;
 	}
-	
+	@Override
 	public void imprimirPropriedades(){
 		System.out.println("nome:" + getNome());
 		System.out.println("cnpj:" + getCpnj());
 	}
+
+	
 	
 }
