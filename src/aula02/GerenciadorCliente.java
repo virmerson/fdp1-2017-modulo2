@@ -1,7 +1,5 @@
 package aula02;
 
-import temp.ClientePF;
-
 public class GerenciadorCliente {
 
 	private Cliente[] vetor ;
