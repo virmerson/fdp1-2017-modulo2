@@ -14,17 +14,28 @@ public class ProgramaPrincipalGerenciador {
 		Funcionario f3 =  new Funcionario();
 		f3.setCpf("999");
 		
-		gerenciador.cadastrar(f1);
-		gerenciador.cadastrar(f2);
-		gerenciador.cadastrar(f3);
+		gerenciador.cadastrar(f1);  //0
+		gerenciador.cadastrar(f2); //1
+		gerenciador.cadastrar(f3); //2
+		
+		gerenciador.imprimir();
 		
 		
+		gerenciador.excluir(f2);
 		gerenciador.excluir(f3);
+		System.out.println("##########");
+		
+		gerenciador.imprimir();
+
 		
 		
-	
+		gerenciador.cadastrar(f2); 
+		gerenciador.cadastrar(f3); 
 		
 		
+		System.out.println("##########");
+		
+		gerenciador.imprimir();
 		
 	}
 

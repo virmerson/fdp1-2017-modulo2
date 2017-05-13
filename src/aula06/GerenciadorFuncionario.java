@@ -23,15 +23,24 @@ public class GerenciadorFuncionario implements Gerenciador<Funcionario> {
 			if (funcionarios[i]!=null){
 				if (func.getCpf().equals(funcionarios[i].getCpf())){
 					for (int j = i ; j < funcionarios.length-1; j++ ){
-						
 						funcionarios[j] =  funcionarios[j+1];
 					}
+					
+					posicao --;
 					qtdExcluido++;
 					funcionarios[funcionarios.length- qtdExcluido] =null;
 					break;
 				}
 			}
 		}
+	}
+
+	@Override
+	public void imprimir() {
+		for (Funcionario f: funcionarios){
+			System.out.println(f);
+		}
+		
 	}
 
 }

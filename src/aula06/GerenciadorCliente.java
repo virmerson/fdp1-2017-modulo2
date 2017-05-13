@@ -14,4 +14,10 @@ public class GerenciadorCliente implements Gerenciador<Cliente> {
 		
 	}
 
+	@Override
+	public void imprimir() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
