@@ -1,5 +1,7 @@
 package aula06;
 
+import java.util.List;
+
 public class GerenciadorFuncionario implements Gerenciador<Funcionario> {
 	private Funcionario[] funcionarios;
 	private int posicao=0;
@@ -41,6 +43,18 @@ public class GerenciadorFuncionario implements Gerenciador<Funcionario> {
 			System.out.println(f);
 		}
 		
+	}
+
+	@Override
+	public void alterar(int indice, Funcionario o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Funcionario> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

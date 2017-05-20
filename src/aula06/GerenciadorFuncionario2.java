@@ -30,4 +30,18 @@ public class GerenciadorFuncionario2 implements Gerenciador<Funcionario> {
 		
 	}
 
+
+	@Override
+	public void alterar(int indice, Funcionario o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public List<Funcionario> buscarTodos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
