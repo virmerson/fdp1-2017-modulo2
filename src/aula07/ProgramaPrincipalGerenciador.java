@@ -13,23 +13,18 @@ public class ProgramaPrincipalGerenciador {
 		jao.setId(1);
 		jao.setNome("Jão");
 		
-		
 		Funcionario ze= new Funcionario();
 		ze.setId(2);
 		ze.setNome("Zé");
-		
 		
 		gerenciador.cadastrar(jao);
 		gerenciador.cadastrar(ze);
 		
 		gerenciador.imprimir();
 		
-		
 		Funcionario novoZe= new Funcionario();
 		novoZe.setId(2);
 		novoZe.setNome("Zé da Silva");
-		
-		
 		
 		gerenciador.alterar(novoZe);
 		
