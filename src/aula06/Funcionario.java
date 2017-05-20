@@ -1,6 +1,7 @@
 package aula06;
 
 public class Funcionario {
+	private Integer id;
 	private String nome;
 	private String cpf;
 	private String cargo;
@@ -29,9 +30,17 @@ public class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
 	@Override
 	public String toString() {
-		return "Funcionario [nome=" + nome + ", cpf=" + cpf + ", cargo=" + cargo + ", salario=" + salario + "]";
+		return "Funcionario [id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", cargo=" + cargo + ", salario=" + salario
+				+ "]";
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	
 	

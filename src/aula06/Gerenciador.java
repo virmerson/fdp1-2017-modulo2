@@ -7,6 +7,7 @@ public interface Gerenciador <T> {
 	void cadastrar(T o);
 	void excluir(T o);
 	void alterar(int indice, T o );
+	void alterar( T o );
 	List<T> buscarTodos();
 	void imprimir();
 	

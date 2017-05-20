@@ -33,15 +33,32 @@ public class GerenciadorFuncionario2 implements Gerenciador<Funcionario> {
 
 	@Override
 	public void alterar(int indice, Funcionario o) {
-		// TODO Auto-generated method stub
+		
+		
+		funcionarios.set(indice, o);
+		
+	}
+	
+
+	
+	public void alterar (Funcionario o) {
+		//Encontraro indice
+		
+		for (int i =0 ; i<funcionarios.size() ; i++){
+			if (funcionarios.get(i).getId().equals(o.getId())){
+				funcionarios.set(i, o);
+				break;
+			}
+		}
+		
+		
 		
 	}
 
 
 	@Override
 	public List<Funcionario> buscarTodos() {
-		// TODO Auto-generated method stub
-		return null;
+		return funcionarios;
 	}
 
 }
