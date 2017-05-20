@@ -3,7 +3,7 @@ package aula06;
 public class ProgramaPrincipalGerenciador {
 	
 	public static void main(String[] args) {
-		Gerenciador<Funcionario> gerenciador = new  GerenciadorFuncionario(3);
+		Gerenciador<Funcionario> gerenciador = new  GerenciadorFuncionario2();
 		
 		Funcionario f1 =  new Funcionario();
 		f1.setCpf("777");
